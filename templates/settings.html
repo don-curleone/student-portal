@@ -1,0 +1,195 @@
+{% extends "base.html" %}
+
+{% block title %}
+Settings
+{% endblock %}
+
+{% block content %}
+
+<div class="settings-page">
+
+    <div class="settings-header">
+        <h1>Settings</h1>
+        <p>Manage your account and preferences.</p>
+    </div>
+
+
+    <!-- Profile -->
+
+    <section class="settings-card">
+
+        <div class="settings-card-header">
+            <div>
+                <h2>Profile</h2>
+                <p>Update your profile information.</p>
+            </div>
+        </div>
+
+        <div class="profile-section">
+
+            <div class="profile-photo">
+                <div class="profile-placeholder">
+                    AP
+                </div>
+
+                <button class="secondary-button">
+                    Change Photo
+                </button>
+            </div>
+
+            <div class="profile-fields">
+
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input
+                        type="text"
+                        id="username"
+                        value="student123"
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input
+                        type="email"
+                        id="email"
+                        value="student@example.com"
+                    >
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="settings-actions">
+            <button class="primary-button">
+                Save Changes
+            </button>
+        </div>
+
+    </section>
+
+
+    <!-- Account Recovery -->
+
+    <section class="settings-card">
+
+        <div class="settings-card-header">
+            <div>
+                <h2>Account Recovery</h2>
+                <p>Manage the contact information used to recover your account.</p>
+            </div>
+        </div>
+
+        <div class="form-grid">
+
+            <div class="form-group">
+                <label for="recovery-email">Recovery Email</label>
+                <input
+                    type="email"
+                    id="recovery-email"
+                    placeholder="recovery@example.com"
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Recovery Phone</label>
+                <input
+                    type="tel"
+                    id="phone"
+                    placeholder="+91 98765 43210"
+                >
+            </div>
+
+        </div>
+
+        <div class="settings-actions">
+            <button class="primary-button">
+                Update Recovery Details
+            </button>
+        </div>
+
+    </section>
+
+
+    <!-- Password -->
+
+    <section class="settings-card">
+
+        <div class="settings-card-header">
+            <div>
+                <h2>Password</h2>
+                <p>Change your account password.</p>
+            </div>
+        </div>
+
+        <div class="form-grid">
+
+            <div class="form-group">
+                <label for="current-password">Current Password</label>
+                <input
+                    type="password"
+                    id="current-password"
+                    placeholder="Enter current password"
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="new-password">New Password</label>
+                <input
+                    type="password"
+                    id="new-password"
+                    placeholder="Enter new password"
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="confirm-password">Confirm New Password</label>
+                <input
+                    type="password"
+                    id="confirm-password"
+                    placeholder="Confirm new password"
+                >
+            </div>
+
+        </div>
+
+        <div class="settings-actions">
+            <button class="primary-button">
+                Reset Password
+            </button>
+        </div>
+
+    </section>
+
+
+    <!-- Appearance -->
+
+    <section class="settings-card">
+
+        <div class="settings-card-header">
+            <div>
+                <h2>Appearance</h2>
+                <p>Customize how the Student Portal looks.</p>
+            </div>
+        </div>
+
+        <div class="appearance-option">
+
+            <div>
+                <h3>Dark Mode</h3>
+                <p>Use a darker color scheme throughout the portal.</p>
+            </div>
+
+            <label class="toggle">
+                <input type="checkbox" id="dark-mode">
+                <span class="slider"></span>
+            </label>
+
+        </div>
+
+    </section>
+
+</div>
+
+{% endblock %}
