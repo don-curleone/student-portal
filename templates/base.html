@@ -31,7 +31,7 @@
         <span>Dashboard</span>
     </a>
 
-    <a href="#"
+    <a href="{{ url_for('courses') }}"
        class="nav-link {% if request.endpoint == 'courses' %}active{% endif %}">
         <span class="nav-icon">▣</span>
         <span>Courses</span>
