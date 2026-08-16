@@ -85,8 +85,22 @@ student-portal/
 ├── .gitignore
 ├── README.md
 ├── app.py
+├── static
+    ├── attendance.css
+    ├── courses.css
+    ├── events.css
+    ├── grades.css
+    ├── settings.css
+    ├── style.css
 ├── templates
+    ├── attendance.html
+    ├── base.html
+    ├── courses.html
+    ├── events.html
+    ├── grades.html
     ├── home.html
+    ├── login.html
+    ├── settings.html
 └── .venv/
 ```
 
