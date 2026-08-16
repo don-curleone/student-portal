@@ -14,6 +14,7 @@
 <link rel="stylesheet" href="{{ url_for('static', filename='courses.css') }}">
 <link rel="stylesheet" href="{{ url_for('static', filename='attendance.css') }}">
 <link rel="stylesheet" href="{{ url_for('static', filename='events.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='grades.css') }}">
 {% endblock %}
 </head>
 
@@ -40,7 +41,7 @@
         <span>Courses</span>
     </a>
 
-    <a href="#"
+    <a href="{{ url_for('grades') }}"
        class="nav-link {% if request.endpoint == 'grades' %}active{% endif %}">
         <span class="nav-icon">▣</span>
         <span>Grades</span>
