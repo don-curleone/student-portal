@@ -17,5 +17,9 @@ def settings():
 def courses():
     return render_template('courses.html')
 
+@app.route('/attendance')
+def attendance():
+    return render_template('attendance.html')
+
 if __name__ == '__main__':
     app.run(debug=True)

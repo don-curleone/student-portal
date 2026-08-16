@@ -50,7 +50,7 @@
         <span>Events</span>
     </a>
 
-    <a href="#"
+    <a href="{{ url_for('attendance') }}"
        class="nav-link {% if request.endpoint == 'attendance' %}active{% endif %}">
         <span class="nav-icon">▣</span>
         <span>Attendance</span>
