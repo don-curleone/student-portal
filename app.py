@@ -25,5 +25,9 @@ def attendance():
 def events():
     return render_template('events.html')
 
+@app.route('/grades')
+def grades():
+    return render_template('grades.html')
+
 if __name__ == '__main__':
     app.run(debug=True)
