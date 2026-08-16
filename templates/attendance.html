@@ -1,0 +1,77 @@
+{% extends "base.html" %}
+
+{% block title %}Attendance{% endblock %}
+
+{% block content %}
+
+<div class="attendance-page">
+
+
+
+    <div class="page-header">
+        <h1>Attendance</h1>
+        <p>Track your attendance, leaves, and academic attendance requirements.</p>
+    </div>
+
+
+
+
+    <section class="attendance-overview">
+
+        <div class="attendance-main-card">
+
+            <div class="attendance-title">
+                <div>
+                    <h2>Current Attendance</h2>
+                    <p>Overall attendance for the current semester</p>
+                </div>
+
+                <span class="attendance-status">
+                    Safe
+                </span>
+            </div>
+
+            <div class="attendance-percentage">
+                82%
+            </div>
+
+            <div class="attendance-progress">
+                <div class="attendance-progress-bar" style="width: 82%;"></div>
+            </div>
+
+            <div class="attendance-range">
+                <span>0%</span>
+                <span>Minimum required: 75%</span>
+                <span>100%</span>
+            </div>
+
+            <div class="attendance-message">
+                You are <strong>7%</strong> above the minimum attendance requirement.
+            </div>
+
+        </div>
+
+
+        <!-- Classes remaining -->
+
+        <div class="attendance-info-card">
+
+            <h3>Attendance Buffer</h3>
+
+            <div class="buffer-number">
+                5
+            </div>
+
+            <p>
+                classes you can miss while remaining above the minimum requirement.
+            </p>
+
+            <span class="buffer-warning">
+                Use your leaves carefully.
+            </span>
+
+        </div>
+
+    </section>
+
+{% endblock %}
