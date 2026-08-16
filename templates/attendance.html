@@ -13,7 +13,7 @@
         <p>Track your attendance, leaves, and academic attendance requirements.</p>
     </div>
 
-
+    
 
 
     <section class="attendance-overview">
@@ -73,5 +73,77 @@
         </div>
 
     </section>
+
+    <section class="leave-section">
+
+        <div class="section-header">
+            <h2>Leave Summary</h2>
+            <p>Your leave record for this semester.</p>
+        </div>
+
+        <div class="leave-grid">
+
+            <!-- Informed Leave -->
+
+            <div class="leave-card informed">
+
+                <div class="leave-icon">
+                    ✓
+                </div>
+
+                <div>
+                    <h3>Informed Leaves</h3>
+                    <p>Leaves reported in advance.</p>
+                </div>
+
+                <div class="leave-count">
+                    4
+                </div>
+
+            </div>
+
+
+            <!-- Uninformed Leave -->
+
+            <div class="leave-card uninformed">
+
+                <div class="leave-icon">
+                    !
+                </div>
+
+                <div>
+                    <h3>Uninformed Leaves</h3>
+                    <p>Absences without prior notice.</p>
+                </div>
+
+                <div class="leave-count">
+                    2
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="attendance-note">
+
+        <div class="note-icon">
+            !
+        </div>
+
+        <div>
+            <h3>Attendance Requirement</h3>
+
+            <p>
+                Students must maintain at least <strong>75%</strong> attendance
+                to remain eligible for examinations. Uninformed absences may
+                also affect your attendance status.
+            </p>
+        </div>
+
+    </section>
+
+    </div>
 
 {% endblock %}
