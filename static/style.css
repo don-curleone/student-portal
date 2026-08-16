@@ -109,3 +109,37 @@ td:first-child {
 tr:last-child td {
     border-bottom: none;
 }
+
+.courses-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.course-card {
+    background-color: #fff;
+    padding: 1.25rem;
+    border-radius: 8px;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.course-card h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #1e293b;
+    margin-bottom: 0.4rem;
+}
+
+.course-card p {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #64748b;
+    margin-bottom: 0.75rem;
+}
+
+.course-card span {
+    font-size: 0.85rem;
+    color: #64748b;
+}
