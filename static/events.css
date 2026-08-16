@@ -1,0 +1,334 @@
+/* =========================
+   EVENTS PAGE
+   ========================= */
+
+.events-page {
+    padding: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* =========================
+   PAGE HEADER
+   ========================= */
+
+.page-header {
+    margin-bottom: 40px;
+}
+
+.page-header h1 {
+    margin: 0 0 8px;
+    font-size: 30px;
+}
+
+.page-header p {
+    margin: 0;
+    color: #777;
+    font-size: 15px;
+}
+
+
+/* =========================
+   EVENT SECTION
+   ========================= */
+
+.events-section {
+    margin-bottom: 45px;
+}
+
+.section-header {
+    margin-bottom: 20px;
+}
+
+.section-header h2 {
+    margin: 0 0 5px;
+    font-size: 21px;
+}
+
+.section-header p {
+    margin: 0;
+    color: #777;
+    font-size: 14px;
+}
+
+
+/* =========================
+   EVENT GRID
+   ========================= */
+
+.event-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+
+/* =========================
+   EVENT CARD
+   ========================= */
+
+.event-card {
+    display: flex;
+    gap: 20px;
+
+    background: #ffffff;
+    border: 1px solid #e5e5e5;
+    border-radius: 12px;
+
+    padding: 22px;
+
+    transition: transform 0.2s ease,
+                box-shadow 0.2s ease;
+}
+
+.event-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.07);
+}
+
+
+/* =========================
+   EVENT DATE
+   ========================= */
+
+.event-date {
+    width: 55px;
+    height: 65px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background: #f5f4ff;
+    border-radius: 9px;
+}
+
+.event-month {
+    font-size: 11px;
+    font-weight: 700;
+    color: #4f46e5;
+}
+
+.event-day {
+    font-size: 25px;
+    font-weight: 700;
+    color: #333;
+}
+
+
+/* =========================
+   EVENT INFORMATION
+   ========================= */
+
+.event-info {
+    flex: 1;
+}
+
+.event-info h3 {
+    margin: 8px 0 8px;
+    font-size: 17px;
+    line-height: 1.3;
+}
+
+.event-club {
+    margin: 0 0 7px;
+
+    font-size: 13px;
+    font-weight: 600;
+    color: #555;
+}
+
+.event-details {
+    margin: 0 0 10px;
+
+    font-size: 13px;
+    color: #888;
+}
+
+.event-description {
+    margin: 0;
+
+    font-size: 13px;
+    line-height: 1.5;
+    color: #666;
+}
+
+
+/* =========================
+   EVENT CATEGORIES
+   ========================= */
+
+.event-category {
+    display: inline-block;
+
+    padding: 5px 9px;
+
+    border-radius: 6px;
+
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.event-category.sports {
+    background: #e8f7ed;
+    color: #238b45;
+}
+
+.event-category.cultural {
+    background: #fff0f6;
+    color: #c02670;
+}
+
+.event-category.literary {
+    background: #fff4d6;
+    color: #a16207;
+}
+
+
+/* =========================
+   REGISTER BUTTON
+   ========================= */
+
+.register-button {
+    margin-top: 18px;
+
+    border: none;
+    background: #4f46e5;
+    color: white;
+
+    padding: 9px 15px;
+
+    border-radius: 7px;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: background 0.2s ease,
+                transform 0.2s ease;
+}
+
+.register-button:hover {
+    background: #4338ca;
+    transform: translateY(-1px);
+}
+
+
+/* =========================
+   TALKS
+   ========================= */
+
+.talks-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.talk-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+
+    background: #ffffff;
+    border: 1px solid #e5e5e5;
+    border-radius: 12px;
+
+    padding: 22px;
+}
+
+.talk-date {
+    width: 55px;
+    height: 65px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background: #f5f4ff;
+    border-radius: 9px;
+}
+
+.talk-info {
+    flex: 1;
+}
+
+.talk-info h3 {
+    margin: 8px 0 8px;
+    font-size: 17px;
+}
+
+.speaker {
+    margin: 0 0 7px;
+
+    font-size: 13px;
+    font-weight: 600;
+    color: #555;
+}
+
+.talk-type {
+    display: inline-block;
+
+    padding: 5px 9px;
+
+    border-radius: 6px;
+
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.talk-type.industry {
+    background: #e8efff;
+    color: #3157b7;
+}
+
+.talk-type.academic {
+    background: #f0eaff;
+    color: #7048b8;
+}
+
+.talk-card .register-button {
+    flex-shrink: 0;
+    margin-top: 0;
+}
+
+
+/* =========================
+   RESPONSIVE
+   ========================= */
+
+@media (max-width: 900px) {
+
+    .event-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .events-page {
+        padding: 20px;
+    }
+
+    .event-card {
+        flex-direction: column;
+    }
+
+    .talk-card {
+        flex-direction: column;
+    }
+
+    .talk-card .register-button {
+        margin-top: 10px;
+    }
+
+}
