@@ -1,0 +1,191 @@
+```html
+{% extends "base.html" %}
+
+{% block title %}Grades | Student Portal{% endblock %}
+
+{% block content %}
+<div class="grades-page">
+
+    <div class="page-header">
+        <div>
+            <h1>Grades</h1>
+            <p>View your academic performance and semester-wise grades.</p>
+        </div>
+    </div>
+
+    <!-- Academic Summary -->
+    <section class="grade-summary">
+        <div class="summary-card">
+            <span class="summary-label">Current CGPA</span>
+            <span class="summary-value">8.42</span>
+            <span class="summary-subtext">Overall</span>
+        </div>
+
+        <div class="summary-card">
+            <span class="summary-label">Current SGPA</span>
+            <span class="summary-value">8.76</span>
+            <span class="summary-subtext">Semester 4</span>
+        </div>
+
+        <div class="summary-card">
+            <span class="summary-label">Credits Earned</span>
+            <span class="summary-value">82</span>
+            <span class="summary-subtext">Out of 84</span>
+        </div>
+
+        <div class="summary-card">
+            <span class="summary-label">Academic Standing</span>
+            <span class="summary-value status-good">Good</span>
+            <span class="summary-subtext">No backlogs</span>
+        </div>
+    </section>
+
+    <!-- Current Semester -->
+    <section class="grades-section">
+        <div class="section-header">
+            <div>
+                <h2>Semester 4</h2>
+                <p>Current semester performance</p>
+            </div>
+        </div>
+
+        <div class="grades-table-wrapper">
+            <table class="grades-table">
+                <thead>
+                    <tr>
+                        <th>Course Code</th>
+                        <th>Course</th>
+                        <th>Credits</th>
+                        <th>Marks</th>
+                        <th>Grade</th>
+                        <th>Grade Point</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>CS401</td>
+                        <td>Database Management Systems</td>
+                        <td>4</td>
+                        <td>88</td>
+                        <td><span class="grade grade-a">A</span></td>
+                        <td>9</td>
+                    </tr>
+
+                    <tr>
+                        <td>CS402</td>
+                        <td>Computer Networks</td>
+                        <td>4</td>
+                        <td>91</td>
+                        <td><span class="grade grade-a-plus">A+</span></td>
+                        <td>10</td>
+                    </tr>
+
+                    <tr>
+                        <td>CS403</td>
+                        <td>Operating Systems</td>
+                        <td>4</td>
+                        <td>84</td>
+                        <td><span class="grade grade-a">A</span></td>
+                        <td>9</td>
+                    </tr>
+
+                    <tr>
+                        <td>CS404</td>
+                        <td>Software Engineering</td>
+                        <td>3</td>
+                        <td>79</td>
+                        <td><span class="grade grade-b-plus">B+</span></td>
+                        <td>8</td>
+                    </tr>
+
+                    <tr>
+                        <td>CS405</td>
+                        <td>Artificial Intelligence</td>
+                        <td>3</td>
+                        <td>86</td>
+                        <td><span class="grade grade-a">A</span></td>
+                        <td>9</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="semester-result">
+            <strong>Semester 4 SGPA: 8.76</strong>
+            <span>Credits: 18</span>
+        </div>
+    </section>
+
+    <!-- Previous Semesters -->
+    <section class="grades-section">
+        <div class="section-header">
+            <div>
+                <h2>Previous Semesters</h2>
+                <p>Your academic performance across previous semesters.</p>
+            </div>
+        </div>
+
+        <div class="semester-cards">
+
+            <div class="semester-card">
+                <div>
+                    <h3>Semester 3</h3>
+                    <p>20 Credits</p>
+                </div>
+
+                <div class="semester-score">
+                    <strong>8.61</strong>
+                    <span>SGPA</span>
+                </div>
+            </div>
+
+            <div class="semester-card">
+                <div>
+                    <h3>Semester 2</h3>
+                    <p>22 Credits</p>
+                </div>
+
+                <div class="semester-score">
+                    <strong>8.24</strong>
+                    <span>SGPA</span>
+                </div>
+            </div>
+
+            <div class="semester-card">
+                <div>
+                    <h3>Semester 1</h3>
+                    <p>22 Credits</p>
+                </div>
+
+                <div class="semester-score">
+                    <strong>8.15</strong>
+                    <span>SGPA</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Grade Scale -->
+    <section class="grades-section">
+        <div class="section-header">
+            <div>
+                <h2>Grade Scale</h2>
+                <p>University grading system</p>
+            </div>
+        </div>
+
+        <div class="grade-scale">
+            <div><span class="grade grade-a-plus">A+</span> 90–100</div>
+            <div><span class="grade grade-a">A</span> 80–89</div>
+            <div><span class="grade grade-b-plus">B+</span> 70–79</div>
+            <div><span class="grade grade-b">B</span> 60–69</div>
+            <div><span class="grade grade-c">C</span> 50–59</div>
+            <div><span class="grade grade-f">F</span> Below 50</div>
+        </div>
+    </section>
+
+</div>
+{% endblock %}
+```
