@@ -69,6 +69,10 @@ The development server will then be available at:
 ```text
 http://127.0.0.1:5000
 ```
+## Logging In
+
+You will be able to login simply by entering anything in the login fields. This was done as this is a Git exercise.
+
 
 ## Project Structure
 
@@ -87,21 +91,3 @@ student-portal/
 ```
 
 The `.venv/` directory is intentionally excluded from version control.
-
-<!-- ## Git Workflow
-
-This project uses Git for version control and GitHub for remote repository hosting.
-
-The general workflow is:
-
-```text
-Make changes
-     ↓
-git add
-     ↓
-git commit
-     ↓
-git push
-```
-
-Feature development will be performed using separate branches and merged into the `main` branch after completion. -->
