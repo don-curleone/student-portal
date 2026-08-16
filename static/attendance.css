@@ -519,3 +519,40 @@
     }
 
 }
+
+/* =========================
+   LEAVE HEADER
+   ========================= */
+
+.leave-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* =========================
+   APPLY FOR LEAVE BUTTON
+   ========================= */
+
+.apply-leave-button {
+    border: none;
+    background: #4f46e5;
+    color: white;
+
+    padding: 10px 16px;
+    border-radius: 8px;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: background 0.2s ease,
+                transform 0.2s ease;
+}
+
+.apply-leave-button:hover {
+    background: #4338ca;
+    transform: translateY(-1px);
+}
