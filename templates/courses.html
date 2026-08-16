@@ -1,0 +1,133 @@
+{% extends "base.html" %}
+
+{% block title %}Courses{% endblock %}
+
+{% block content %}
+
+<div class="courses-page">
+
+    <div class="page-header">
+        <h1>Courses</h1>
+        <p>Manage your enrolled courses and explore courses offered by the university.</p>
+    </div>
+
+
+    <!-- Enrolled Courses -->
+    <section class="course-section">
+
+        <div class="section-header">
+            <div>
+                <h2>My Courses</h2>
+                <p>Courses you are currently enrolled in.</p>
+            </div>
+        </div>
+
+        <div class="course-grid">
+
+            <!-- Course 1 -->
+            <div class="course-card">
+
+                <div class="course-card-header">
+                    <span class="course-code">CS301</span>
+                    <span class="course-credits">4 Credits</span>
+                </div>
+
+                <h3>Data Structures</h3>
+
+                <p class="professor">
+                    Prof. John Smith
+                </p>
+
+                <p class="schedule">
+                    Mon & Wed · 10:00 AM
+                </p>
+
+                <div class="course-actions">
+                    <button
+                        class="details-button"
+                        onclick="document.getElementById('data-structures').showModal()">
+                        View Details
+                    </button>
+
+                    <button class="drop-button">
+                        Drop Course
+                    </button>
+                </div>
+
+            </div>
+
+
+            <!-- Course 2 -->
+            <div class="course-card">
+
+                <div class="course-card-header">
+                    <span class="course-code">CS405</span>
+                    <span class="course-credits">4 Credits</span>
+                </div>
+
+                <h3>Machine Learning</h3>
+
+                <p class="professor">
+                    Prof. Jane Doe
+                </p>
+
+                <p class="schedule">
+                    Tue & Thu · 2:00 PM
+                </p>
+
+                <div class="course-actions">
+
+                    <button
+                        class="details-button"
+                        onclick="document.getElementById('machine-learning').showModal()">
+                        View Details
+                    </button>
+
+                    <button class="drop-button">
+                        Drop Course
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Course 3 -->
+            <div class="course-card">
+
+                <div class="course-card-header">
+                    <span class="course-code">CS310</span>
+                    <span class="course-credits">3 Credits</span>
+                </div>
+
+                <h3>Database Systems</h3>
+
+                <p class="professor">
+                    Prof. Robert Brown
+                </p>
+
+                <p class="schedule">
+                    Mon & Fri · 1:00 PM
+                </p>
+
+                <div class="course-actions">
+
+                    <button
+                        class="details-button"
+                        onclick="document.getElementById('database').showModal()">
+                        View Details
+                    </button>
+
+                    <button class="drop-button">
+                        Drop Course
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+{% endblock %}
