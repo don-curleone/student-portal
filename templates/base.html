@@ -23,22 +23,27 @@
         <p>Student Dashboard</p>
     </div>
 
-    <nav class="sidebar-nav">
-        <a href="{{ url_for('home') }}" class="nav-link active">
-            <span class="nav-icon">⌂</span>
-            <span>Dashboard</span>
-        </a>
+<nav class="sidebar-nav">
 
-        <a href="#" class="nav-link">
-            <span class="nav-icon">▣</span>
-            <span>Courses</span>
-        </a>
+    <a href="{{ url_for('home') }}"
+       class="nav-link {% if request.endpoint == 'home' %}active{% endif %}">
+        <span class="nav-icon">⌂</span>
+        <span>Dashboard</span>
+    </a>
 
-        <a href="{{ url_for('settings') }}" class="nav-link">
-            <span class="nav-icon">⚙</span>
-            <span>Settings</span>
-        </a>
-    </nav>
+    <a href="#"
+       class="nav-link {% if request.endpoint == 'courses' %}active{% endif %}">
+        <span class="nav-icon">▣</span>
+        <span>Courses</span>
+    </a>
+
+    <a href="{{ url_for('settings') }}"
+       class="nav-link {% if request.endpoint == 'settings' %}active{% endif %}">
+        <span class="nav-icon">⚙</span>
+        <span>Settings</span>
+    </a>
+
+</nav>
 
     <div class="sidebar-footer">
         <a href="{{ url_for('login') }}" class="logout-link">
