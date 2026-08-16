@@ -11,16 +11,38 @@
 
 <body>
 
-    <aside class="sidebar">
-        <h2>Student Portal</h2>
+<aside class="sidebar">
 
-        <nav>
-            <a href="{{ url_for('home') }}">Dashboard</a>
-            <a href="#">Courses</a>
-            <a href="#">Settings</a>
-            <a href="{{ url_for('login') }}" class="logout-link">Logout</a>
-        </nav>
-    </aside>
+    <div class="sidebar-header">
+        <h2>Student Portal</h2>
+        <p>Student Dashboard</p>
+    </div>
+
+    <nav class="sidebar-nav">
+        <a href="{{ url_for('home') }}" class="nav-link active">
+            <span class="nav-icon">⌂</span>
+            <span>Dashboard</span>
+        </a>
+
+        <a href="#" class="nav-link">
+            <span class="nav-icon">▣</span>
+            <span>Courses</span>
+        </a>
+
+        <a href="#" class="nav-link">
+            <span class="nav-icon">⚙</span>
+            <span>Settings</span>
+        </a>
+    </nav>
+
+    <div class="sidebar-footer">
+        <a href="{{ url_for('login') }}" class="logout-link">
+            <span class="nav-icon">↪</span>
+            <span>Logout</span>
+        </a>
+    </div>
+
+</aside>
 
     <main class="main-content">
         {% block content %}
